@@ -4,18 +4,28 @@
 #include <cctype>    // For std::tolower and std::isalpha
 #include <queue>
 
+/**
+ * Constructor: WordTree
+ * Initializes an empty word tree with a root node.
+ */
 WordTree::WordTree() :
     root(std::make_shared<TreeNode>()) {}
 
+/**
+ * Function: add
+ * Adds a word to the word tree by iterating through each character,
+ * creating new nodes where needed, and marking the end of the word.
+ *
+ * Parameters:
+ *   word - The word to be added to the tree.
+ */
 void WordTree::add(std::string word)
 {
-    // Convert word to lowercase
     std::transform(word.begin(), word.end(), word.begin(), [](unsigned char c)
                    {
                        return std::tolower(c);
                    });
 
-    // Check if all characters are alphabetic
     bool isAlpha = std::all_of(word.begin(), word.end(), [](unsigned char c)
                                {
                                    return std::isalpha(c);
@@ -40,15 +50,24 @@ void WordTree::add(std::string word)
     currentNode->endOfWord = true;
 }
 
+/**
+ * Function: find
+ * Searches for a given word in the word tree, returning true if the
+ * word exists, or false otherwise. The search is case-insensitive.
+ *
+ * Parameters:
+ *   word - The word to search for in the tree.
+ *
+ * Returns:
+ *   True if the word is found, false otherwise.
+ */
 bool WordTree::find(std::string word)
 {
-    // Convert word to lowercase
     std::transform(word.begin(), word.end(), word.begin(), [](unsigned char c)
                    {
                        return std::tolower(c);
                    });
 
-    // Check if all characters are alphabetic
     bool isAlpha = std::all_of(word.begin(), word.end(), [](unsigned char c)
                                {
                                    return std::isalpha(c);
@@ -56,7 +75,7 @@ bool WordTree::find(std::string word)
 
     if (word.empty() || !isAlpha)
     {
-        return false; // Return false if the word is empty or contains non-alphabetic characters
+        return false;
     }
 
     std::shared_ptr<TreeNode> currentNode = root;
@@ -71,6 +90,14 @@ bool WordTree::find(std::string word)
     return currentNode->endOfWord;
 }
 
+/**
+ * Function: size
+ * Calculates the total number of words stored in the word tree.
+ * Uses breadth-first search (BFS) to traverse all nodes and count words.
+ *
+ * Returns:
+ *   The number of words in the tree.
+ */
 std::size_t WordTree::size()
 {
     if (root == nullptr)
@@ -100,15 +127,26 @@ std::size_t WordTree::size()
     return numOfWords;
 }
 
+/**
+ * Function: predict
+ * Predicts possible word completions for a given partial string. It
+ * traverses the tree to the end of the partial string, then performs a
+ * breadth-first search to gather predictions up to the specified limit.
+ *
+ * Parameters:
+ *   partial - The starting string for generating predictions.
+ *   howMany - The maximum number of predictions to return.
+ *
+ * Returns:
+ *   A vector of predicted words that match the given partial.
+ */
 std::vector<std::string> WordTree::predict(std::string partial, std::uint8_t howMany)
 {
-    // Convert partial to lowercase
     std::transform(partial.begin(), partial.end(), partial.begin(), [](unsigned char c)
                    {
                        return std::tolower(c);
                    });
 
-    // Check if all characters are alphabetic
     bool isAlpha = std::all_of(partial.begin(), partial.end(), [](unsigned char c)
                                {
                                    return std::isalpha(c);
@@ -116,7 +154,7 @@ std::vector<std::string> WordTree::predict(std::string partial, std::uint8_t how
 
     if (partial.empty() || !isAlpha)
     {
-        return {}; // Return an empty vector if partial is empty or contains non-alphabetic characters
+        return {};
     }
 
     std::vector<std::string> predictions;
@@ -141,7 +179,6 @@ std::vector<std::string> WordTree::predict(std::string partial, std::uint8_t how
         auto [node, prefix] = q.front();
         q.pop();
 
-        // Only add predictions that extend beyond the partial word
         if (node->endOfWord && prefix.size() > partial.size())
         {
             predictions.push_back(prefix);
@@ -149,7 +186,6 @@ std::vector<std::string> WordTree::predict(std::string partial, std::uint8_t how
                 break;
         }
 
-        // Gotta sort the children to pass the test i guess
         std::vector<std::pair<char, std::shared_ptr<TreeNode>>> children(
             node->children.begin(), node->children.end());
         std::sort(children.begin(), children.end(),

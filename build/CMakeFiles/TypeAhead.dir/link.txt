@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/TypeAhead.dir/WordTree.cpp.o CMakeFiles/TypeAhead.dir/main.cpp.o -o TypeAhead

@@ -24,6 +24,5 @@ class WordTree
     std::size_t size();
 
   private:
-    bool isAllLowercaseAlpha(const std::string& str);
     std::shared_ptr<TreeNode> root;
 };
