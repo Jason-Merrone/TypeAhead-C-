@@ -269,12 +269,17 @@ CMakeFiles/TypeAhead.dir/WordTree.cpp.o: /home/jason/course-assn/cs3460/Type-Ahe
 
 CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/main.cpp \
   /home/jason/course-assn/cs3460/Type-Ahead/WordTree.hpp \
+  /home/jason/course-assn/cs3460/Type-Ahead/rlutil.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/ioctl.h \
+  /usr/include/asm-generic/ioctls.h \
+  /usr/include/c++/14/algorithm \
   /usr/include/c++/14/backward/auto_ptr.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/algorithmfwd.h \
   /usr/include/c++/14/bits/align.h \
   /usr/include/c++/14/bits/alloc_traits.h \
   /usr/include/c++/14/bits/allocated_ptr.h \
@@ -288,6 +293,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/c++/14/bits/basic_string.tcc \
   /usr/include/c++/14/bits/char_traits.h \
   /usr/include/c++/14/bits/charconv.h \
+  /usr/include/c++/14/bits/codecvt.h \
   /usr/include/c++/14/bits/concept_check.h \
   /usr/include/c++/14/bits/cpp_type_traits.h \
   /usr/include/c++/14/bits/cxxabi_forced.h \
@@ -298,6 +304,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/c++/14/bits/exception.h \
   /usr/include/c++/14/bits/exception_defines.h \
   /usr/include/c++/14/bits/exception_ptr.h \
+  /usr/include/c++/14/bits/fstream.tcc \
   /usr/include/c++/14/bits/functexcept.h \
   /usr/include/c++/14/bits/functional_hash.h \
   /usr/include/c++/14/bits/hash_bytes.h \
@@ -325,6 +332,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/c++/14/bits/predefined_ops.h \
   /usr/include/c++/14/bits/ptr_traits.h \
   /usr/include/c++/14/bits/range_access.h \
+  /usr/include/c++/14/bits/ranges_algo.h \
   /usr/include/c++/14/bits/ranges_algobase.h \
   /usr/include/c++/14/bits/ranges_base.h \
   /usr/include/c++/14/bits/ranges_cmp.h \
@@ -337,6 +345,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/c++/14/bits/shared_ptr_base.h \
   /usr/include/c++/14/bits/std_abs.h \
   /usr/include/c++/14/bits/std_mutex.h \
+  /usr/include/c++/14/bits/stl_algo.h \
   /usr/include/c++/14/bits/stl_algobase.h \
   /usr/include/c++/14/bits/stl_bvector.h \
   /usr/include/c++/14/bits/stl_construct.h \
@@ -356,6 +365,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/c++/14/bits/streambuf_iterator.h \
   /usr/include/c++/14/bits/string_view.tcc \
   /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/uniform_int_dist.h \
   /usr/include/c++/14/bits/unique_ptr.h \
   /usr/include/c++/14/bits/unordered_map.h \
   /usr/include/c++/14/bits/uses_allocator.h \
@@ -386,6 +396,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/c++/14/ext/numeric_traits.h \
   /usr/include/c++/14/ext/string_conversions.h \
   /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/fstream \
   /usr/include/c++/14/initializer_list \
   /usr/include/c++/14/ios \
   /usr/include/c++/14/iosfwd \
@@ -396,6 +407,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/c++/14/numbers \
   /usr/include/c++/14/ostream \
   /usr/include/c++/14/pstl/execution_defs.h \
+  /usr/include/c++/14/pstl/glue_algorithm_defs.h \
   /usr/include/c++/14/pstl/glue_memory_defs.h \
   /usr/include/c++/14/pstl/pstl_config.h \
   /usr/include/c++/14/queue \
@@ -417,6 +429,7 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/ioctl.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -426,11 +439,14 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/syscall.h \
+  /usr/include/termios.h \
   /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
   /usr/include/x86_64-linux-gnu/asm/unistd.h \
   /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
@@ -445,6 +461,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
   /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
@@ -466,6 +484,16 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/x86_64-linux-gnu/bits/syscall.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+  /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+  /usr/include/x86_64-linux-gnu/bits/termios.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/time.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -507,8 +535,10 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h \
@@ -520,9 +550,12 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/syscall.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
@@ -531,7 +564,35 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
   /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h
 
 
+/usr/include/x86_64-linux-gnu/sys/ttydefaults.h:
+
+/usr/include/x86_64-linux-gnu/sys/ioctl.h:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-tcflow.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-misc.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_cc.h:
+
+/usr/include/x86_64-linux-gnu/asm/ioctls.h:
+
+/usr/include/termios.h:
+
 /usr/include/c++/14/bits/istream.tcc:
+
+/usr/include/c++/14/bits/fstream.tcc:
+
+/usr/include/c++/14/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/14/include/syslimits.h:
 
@@ -568,6 +629,10 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios.h:
+
+/usr/include/x86_64-linux-gnu/bits/termios-struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
@@ -613,6 +678,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
+/usr/include/x86_64-linux-gnu/bits/ioctl-types.h:
+
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
@@ -635,6 +702,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+/usr/include/x86_64-linux-gnu/c++/14/bits/basic_file.h:
+
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
@@ -646,6 +715,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/asm-generic/ioctl.h:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
@@ -705,9 +776,13 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 
 /usr/include/c++/14/bits/ranges_util.h:
 
+/usr/include/x86_64-linux-gnu/sys/time.h:
+
 /usr/include/c++/14/bits/cpp_type_traits.h:
 
 /usr/include/c++/14/cctype:
+
+/usr/include/x86_64-linux-gnu/bits/ioctls.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -893,6 +968,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 
 /usr/include/c++/14/bits/exception_defines.h:
 
+/usr/include/x86_64-linux-gnu/asm/ioctl.h:
+
 /usr/include/c++/14/bits/functexcept.h:
 
 /usr/include/alloca.h:
@@ -953,6 +1030,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 
 /usr/include/c++/14/bits/uses_allocator.h:
 
+/usr/include/asm-generic/ioctls.h:
+
 /usr/include/c++/14/bits/memory_resource.h:
 
 /usr/include/c++/14/bits/stl_tempbuf.h:
@@ -975,6 +1054,10 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 
 /usr/include/c++/14/concepts:
 
+/usr/include/linux/ioctl.h:
+
+/usr/include/c++/14/fstream:
+
 /usr/include/c++/14/bits/stl_queue.h:
 
 /usr/include/c++/14/bits/concept_check.h:
@@ -988,6 +1071,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 /usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h:
 
 /usr/include/c++/14/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/termios-baud.h:
 
 /usr/include/c++/14/pstl/glue_algorithm_defs.h:
 
@@ -1036,6 +1121,8 @@ CMakeFiles/TypeAhead.dir/main.cpp.o: /home/jason/course-assn/cs3460/Type-Ahead/m
 /usr/include/c++/14/type_traits:
 
 /usr/include/c++/14/typeinfo:
+
+/home/jason/course-assn/cs3460/Type-Ahead/rlutil.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
