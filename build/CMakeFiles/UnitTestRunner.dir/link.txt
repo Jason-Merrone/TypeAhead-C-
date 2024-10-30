@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/UnitTestRunner.dir/WordTree.cpp.o CMakeFiles/UnitTestRunner.dir/TestWordTree.cpp.o -o UnitTestRunner  lib/libgtest_main.a lib/libgtest.a
